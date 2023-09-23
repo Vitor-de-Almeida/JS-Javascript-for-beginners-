@@ -22,10 +22,14 @@
     <script>
         /* var name = window.prompt('What is your name?') // Var name receive data entered by the user! 
         alert('É um grande prazer em te conhecer, ' + name + '!') // concatenation */
-        var n1 = number.parseInt.window.prompt('Enter a number: ')
-        var n2 = number.parseFloat.window.prompt('Enter another number: ')
+        var name = String(prompt('What is your name?'))
+        var surname = (prompt('What is your name?')).toString()
+        var n1 = Number.parseInt(window.prompt('Enter a number: '))
+        var n2 = Number(window.prompt('Enter another number: '))
         var n3 = n1 + n2
-        alert(n3)
+        alert(`The classmate ${name} ${surname} has as first score ${n1.toFixed(2)} and ${n2.toFixed(2)} as second score! The total score is ${(n1+n2).toFixed(2)}`)
+        alert(`The name ${name} has ${name.length} words!`)
+        alert(`The last name ${surname.toUpperCase()} in capital letters looks like this!`)
     </script>
 </body>
 </html>
