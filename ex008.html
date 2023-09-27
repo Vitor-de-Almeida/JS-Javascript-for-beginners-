@@ -12,8 +12,11 @@
 </head>
 <body>
     <script>
-        /*Write a program that reads any integer and displays its table on the screen.*/
-        
+        /*create a program that reads how much money a person has in his wallet in reais
+        and shows how many dollars he can buy (consider the dollar at $ 4.82)*/
+        var m = Number(prompt('Enter how much money do you have in reais: '))
+        var dollar = m*4.82
+        document.write(`With ${m} reais you can buy ${dollar} dollars!`)
     </script>
 </body>
 </html>
