@@ -12,9 +12,11 @@
 </head>
 <body>
     <script>
-        /*Write a program that reads an integer and displays its successor and predecessor on the screen*/
-        var n1 = Number.parseFloat(prompt('Enter any number you want: '))
-        document.write(`The number you entered is ${n1} and its sucessor is ${n1+1} and its predecessor is ${n1-1}`)
+        /*Write a program that reads the value in meters and displays it converted to centimeters and millimeters.*/
+        var m1 = Number.parseFloat(prompt('Enter the value in meters you want to convert: '))
+        var cm = m1*100
+        var mm = m1*1000
+        document.write(`${m1}m is equal to ${cm}cm and equal to ${mm}mm`)
     </script>
 </body>
 </html>
