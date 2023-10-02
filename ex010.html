@@ -13,6 +13,9 @@
 <body>
     <script>
         /*make an algorithm that reads the price of a product and shows its new price with 5% off*/
+        var price = Number.parseFloat(prompt('Enter the price of your product: '))
+        var newprice = Number.parseFloat((price*(95))/100)
+        document.write(`The new price of your product with 5% of discount is ${newprice.toFixed(2)} dollars!`)
     </script>
 </body>
 </html>
