@@ -13,7 +13,10 @@
 <body>
     <script>
         /*make an algorithm that reads a temperature in celsius and output its temperature in farenheit*/
-        
+        var cels = Number.parseInt(prompt('Enter the temperature in celsius: '))
+        var fare = Number.parseFloat((9*cels/5)+32)
+        document.write(`${cels} celsius degrees corresponding to ${fare} farenheit degrees!<br>`)
+        document.write(`${typeof(cels)}`)
         
         
     </script>
