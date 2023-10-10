@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionality System</title>
+</head>
+<body>
+    <h1>Nacionality System</h1>
+    <p>Nacionality: <input type="text" name="txtnac" id="txtnac"> <input type="button" value="Verify" onclick="calculate()"></p>
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function calculate() {
+            var txtn = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            
+            var country = (txtn.value)
+
+            if (country == 'United States of America') {
+                res.innerHTML = `<p>You are American!</p>`
+            } else {
+                res.innerHTML = `<p>You are foreigner!</p>`
+            }
+            res.innerHTML += `<p>That's why you born in ${country}</p>`
+        }
+     
+    </script>
+
+</body>
+</html>
