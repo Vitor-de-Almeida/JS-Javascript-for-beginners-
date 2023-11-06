@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68,125,199);
+            color: #fff;
+            font: normal 1.3rem arial;
+        }
+
+        #titulo {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecionando DOM</h1>
+
+    <h1><strong>por querySelector</strong></h1>
+    <p>Este é o resultado da query</p>
+    <div id="teste1">Clique em mim</div>
+
+    <h1>por Marca -  getElementsByTagName()</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div>Clique em mim</div>
+
+    <h1 id="titulo">por ID - getElementById()</h1>
+    <p id="msg">Este é o resultado testado</p>
+    <div>Clique em mim</div>
+
+    <h1 style="color: blue">por NOME - getElementsByName()</h1>
+    <p name="msg">Este é o resultado do terceiro título</p>
+    <div>Clique em mim</div>
+
+    <h1 style="color: rgba(255, 228, 228, 0.253)">por Classe - getElementsByClassName()</h1>
+    <p class="teste">Este é o resultado do terceiro título</p>
+    <div>Clique em mim</div>
+    <br>
+    <script>
+        var f = window.document.querySelector('div#teste1')
+        f.style.color = 'yellowgreen'
+        f.innerHTML = 'Olá, mundo!'
+    </script>
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = '#3132f6'
+        window.document.write('Está escrito desta manaiera no primeiro parágrafo: ' + p1.innerHTML) // innerTEXT representa somente o texto enquanto innerHTML representa o HTML
+    </script>
+    <script>
+        let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        window.document.getElementById('msg').innerText = 'Está é a forma completa de digitar um texto'
+        // d.innerText = 'Estou aguardando'
+    </script>
+
+    <script>
+        let f = window.document.getElementsByName('msg')[0].innerText = 'Veja como fica o resultado desta frase'
+    </script>
+
+    <script>
+        window.document.getElementsByClassName('teste')[0].innerHTML = 'Olá, aprendam comigo!'
+    </script>
+</body>
+</html>

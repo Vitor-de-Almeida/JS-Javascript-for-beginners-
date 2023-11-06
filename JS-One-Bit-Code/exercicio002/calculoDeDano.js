@@ -2,9 +2,9 @@ const nomePrimeiroPersonagem = prompt("Digite o nome do primeiro personagem: ")
 const poderDeAtaquePrimeiroPersonagem = Number.parseFloat(prompt("Digite o poder de ataque do primeiro personagem: "))
 
 const nomeSegundoPersonagem = prompt("Digite o nome do segundo personagem: ")
-const poderDeVidaSegundoPersonagem = Number(prompt("Digite a quantidade de pontos de vida do segundo personagem: "))
+let poderDeVidaSegundoPersonagem = Number(prompt("Digite a quantidade de pontos de vida do segundo personagem: "))
 const poderDeDefesaSegundoPersonagem = Number(prompt("Digite o poder de defesa do segundo personagem: "))
-let poderDeEscudoSegundoPersonagem = prompt("Digite se o segundo personagem possuí escudo: ").toLowerCase()
+let poderDeEscudoSegundoPersonagem = prompt("Digite se o segundo personagem possuí escudo [S/N]: ").toLowerCase()
 
 let dano = 0
 
