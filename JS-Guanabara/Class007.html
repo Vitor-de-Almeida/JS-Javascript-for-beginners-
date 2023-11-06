@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Fine System</title>
+    <title>Sistema de Multas de Trânsito</title>
 </head>
 <body>
-    <h1>Fine System</h1>
-    <p>Car Velocity: <input type="number" name="txtvel" id="txtvel"> Km/h <input type="button" value="Verify" onclick="calculate()"></p>
-    <div id="res">
-
+    <h1>Sistema de Multas</h1>
+    <p>
+    Velocidade do Carro: 
+    
+    <input type="number" name="txtvel" id="txtvel"> Km/h 
+    
+    <input type="button" value="Verificar" onclick="calcular()"> 
+    <!-- id="clicar" -->
+    </p>
+    
+    <div id="resultado">
+       
     </div>
-    <script>
-        function calculate () {
-            var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.querySelector('div#res')
-            var vel = Number.parseFloat(txtv.value)
 
-            res.innerHTML = `<p>Your current velocity is <strong>${vel} km/h</strong></p>`
-            if (vel > 60) {
-                res.innerHTML += `<p>You are fined because you exceeded the speed limit of 60 km/h!</p>`
+    <script>  
+        // let clicar = window.document.querySelector('input#clicar')
+       
+        // clicar.addEventListener('click', calcular)
+
+
+        function calcular () {
+            let txtvel = window.document.querySelector('input#txtvel').value
+            
+            txtvel = Number(txtvel)
+            
+            resultado.innerHTML = `<p>Sua velocidade atual do carro é <strong>${txtvel} km/h</strong></p>`
+            if (txtvel > 60) {
+                resultado.innerHTML += `Você foi multado por <strong>excesso de velocidade</strong>, pois sua velocidade atual é de ${txtvel} km/h!`
+            } else {
+                resultado.innerHTML += `Você está dentro do limite de velocidade, pois sua velocidade atual é ${txtvel} km/h`
             }
-            res.innerHTML += `<p>Drive always safely, drive with seat belt!</p>`
-
+            resultado.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
         }
+
+
     </script>
 
 </body>
