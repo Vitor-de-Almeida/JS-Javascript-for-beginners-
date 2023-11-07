@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nacionality System</title>
+    <title>Identificando a Nacionalidade</title>
 </head>
 <body>
-    <h1>Nacionality System</h1>
-    <p>Nacionality: <input type="text" name="txtnac" id="txtnac"> <input type="button" value="Verify" onclick="calculate()"></p>
-    <div id="res">
+    <h1>Identificando sua Nacionalidade</h1>
+    
+    <label for="">Digite em qual país você nasceu:</label>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    
+    <button type="submit" onclick="analisar()">Verificar</button>
+
+    <div id="resultado">
 
     </div>
-    
     <script>
-        function calculate() {
-            var txtn = window.document.querySelector('input#txtnac')
-            var res = window.document.querySelector('div#res')
-            
-            var country = (txtn.value)
-
-            if (country == 'United States of America') {
-                res.innerHTML = `<p>You are American!</p>`
-            } else {
-                res.innerHTML = `<p>You are foreigner!</p>`
+        function analisar (){
+            let nac = window.document.querySelector('input#nacionalidade').value
+            resultado.innerHTML = `Você é do ${nac}!<br>` 
+            if (nac == 'brasil') {
+                resultado.innerHTML += `Você é brasileiro` 
+            }   else {
+                resultado.innerHTML += `Você é estrangeiro` 
             }
-            res.innerHTML += `<p>That's why you born in ${country}</p>`
         }
-     
     </script>
-
 </body>
 </html>

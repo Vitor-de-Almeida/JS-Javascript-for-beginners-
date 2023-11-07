@@ -1,5 +1,5 @@
-var now = new Date()
-var weekday = now.getDay()
+let now = new Date()
+let weekday = now.getDay()
 /*
 0 = Sunday
 1 = Monday
@@ -34,4 +34,5 @@ switch(weekday) {
         break
     default:
         console.log('[Error] Invalid Day')
+        break
 }
