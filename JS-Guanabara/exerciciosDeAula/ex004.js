@@ -10,7 +10,8 @@
 //     n++
 // } while (n < 6)
 
-console.log('Vai começar!')
-for (n; n <= 10; n++) {
+console.log('Vai começar...')
+for (let n = 1; n <= 4; n++) {
     console.log(n)
 }
+console.log('Fim')
