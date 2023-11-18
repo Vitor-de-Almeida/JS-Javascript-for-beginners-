@@ -1,13 +1,13 @@
-let baralho = ["Carta 1", "Carta 2", "Carta 3", "Carta 4", "Carta 5"]
+let baralho = []
 baralhocartas = 'Abra a caixa do Baralho 7 Cassinos. Nele, temos as seguintes cartas:\n'
 for (let indice = 0; indice < baralho.length; indice++) {
     baralhocartas += ("- " + baralho[indice] + "\n")
 }
 
-alert(baralhocartas)
-
 do {
-    escolha = Number(prompt("Escolha a opção desejada:\n" + 
+    escolha = Number(prompt(
+    "Cartas no baralho: " + baralho.length +
+    "Escolha a opção desejada:\n" + 
     "1. Adicionar uma carta;\n" + 
     "2. Puxar uma carta;\n" + 
     "3. Sair"))
@@ -18,7 +18,11 @@ do {
         break
         case 2: 
         removerfinal = baralho.pop()
-        alert("A carta puxada é a " + removerfinal)
+        if (!removerfinal) {
+            alert("Não há nenhuma carta no baralho")
+        } else {
+            alert("A carta puxada é a " + removerfinal)
+        }
         break
         case 3:
         break

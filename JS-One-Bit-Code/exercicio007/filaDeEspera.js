@@ -6,7 +6,8 @@ let removerinicio = ''
 do {
 
 let gafanhotos = ""
-for (let indice = 0; indice < filaDeEspera.length; indice++) {
+
+for (let indice = 0; indice < filaDeEspera.length; indice += 1) {
     gafanhotos += ((indice + 1) + "º  - " + filaDeEspera[indice] + "\n")
 }
 
@@ -18,7 +19,8 @@ escolha = Number(prompt("Pacientes:\n" + gafanhotos +
 
 switch (escolha) {
     case 1: 
-    adicionar = filaDeEspera.push(prompt('Digite o nome do novo paciente:'))
+    adicionar = (prompt('Digite o nome do novo paciente:'))
+    filaDeEspera.push(adicionar)
     break
     case 2: 
     removerinicio = filaDeEspera.shift()
@@ -36,6 +38,7 @@ switch (escolha) {
 }
 
 } while (escolha !== 3)
+
 
 
 
