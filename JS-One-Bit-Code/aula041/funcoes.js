@@ -1,5 +1,5 @@
-function ola(txt) {
-    alert("Olá, mundo!")
+function ola() {
+    console.log("Olá, mundo!")
 }
 
-alert(txt)
+ola()
