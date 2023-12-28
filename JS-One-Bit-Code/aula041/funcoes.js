@@ -1,5 +1,5 @@
-function ola() {
-    console.log("Olá mundo!")
-}
+// function ola() {
+//     console.log("Olá mundo!")
+// }
 
-ola()
+// ola()
