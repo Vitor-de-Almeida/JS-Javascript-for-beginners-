@@ -41,7 +41,7 @@ const personagens = [
 //     return personagem.raca === "Orc"
 // })
 
-//console.log(orcs)
+// console.log(orcs)
 
 
 // Reduce
@@ -76,7 +76,6 @@ const racas = {}
 for (let i = 0; i < personagens.length; i++) {
 
     const personagem = personagens[i]
-    console.log(personagem)
     
     if (racas[personagem.raca]) {
         racas[personagem.raca].push(personagem);
@@ -86,3 +85,10 @@ for (let i = 0; i < personagens.length; i++) {
 }
 
 console.log(racas)
+
+//sort
+
+personagens.sort(function (a, b) {
+
+})
+console.log(personagens)
