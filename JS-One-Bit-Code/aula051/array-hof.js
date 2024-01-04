@@ -88,7 +88,14 @@ console.log(racas)
 
 //sort
 
-personagens.sort(function (a, b) {
-
+const personagensOrdenados = personagens.slice().sort(function (a, b) {
+    return a.nivel - b.nivel
 })
+
 console.log(personagens)
+console.log(personagensOrdenados)
+
+// const personagensOrdenados = personagens.slice().sort((a, b) => a.nome.localeCompare(b.nome))
+
+// console.log(personagens)
+// console.log(personagensOrdenados)
