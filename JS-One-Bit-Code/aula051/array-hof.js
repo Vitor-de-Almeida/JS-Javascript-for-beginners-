@@ -60,40 +60,40 @@ const personagens = [
 
 // console.log(nivelTotal)
 
-// const racas = personagens.reduce(function (valorAcumulado, personagem) {
-//     if (valorAcumulado[personagem.raca]) {
-//         valorAcumulado[personagem.raca].push(personagem)
-//     } else {
-//         valorAcumulado[personagem.raca] = [personagem]
-//     }
-//     return valorAcumulado
-// }, {})
-
-// console.log(racas)
-
-const racas = {}
-
-for (let i = 0; i < personagens.length; i++) {
-
-    const personagem = personagens[i]
-    
-    if (racas[personagem.raca]) {
-        racas[personagem.raca].push(personagem);
+const racas = personagens.reduce(function (valorAcumulado, personagem) {
+    if (valorAcumulado[personagem.raca]) {
+        valorAcumulado[personagem.raca].push(personagem)
     } else {
-        racas[personagem.raca] = [personagem];
+        valorAcumulado[personagem.raca] = [personagem]
     }
-}
+    return valorAcumulado
+}, {})
 
 console.log(racas)
 
-//sort
+// const racas = {}
 
-const personagensOrdenados = personagens.slice().sort(function (a, b) {
-    return a.nivel - b.nivel
-})
+// for (let i = 0; i < personagens.length; i++) {
 
-console.log(personagens)
-console.log(personagensOrdenados)
+//     const personagem = personagens[i]
+    
+//     if (racas[personagem.raca]) {
+//         racas[personagem.raca].push(personagem);
+//     } else {
+//         racas[personagem.raca] = [personagem];
+//     }
+// }
+
+// console.log(racas)
+
+// //sort
+
+// const personagensOrdenados = personagens.slice().sort(function (a, b) {
+//     return a.nivel - b.nivel
+// })
+
+// console.log(personagens)
+// console.log(personagensOrdenados)
 
 // const personagensOrdenados = personagens.slice().sort((a, b) => a.nome.localeCompare(b.nome))
 
