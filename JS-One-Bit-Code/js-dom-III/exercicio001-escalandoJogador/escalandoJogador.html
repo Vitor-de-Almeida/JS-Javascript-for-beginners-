@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escalando um jogador</title>
-    <link rel="stylesheet" href="style.css">
     <script src="escalandoJogador.js"></script>
 </head>
 <body>
-    <h1>Escalando o Time</h1>
-    
-    <label for="posicao">Informe a posição do jogador: </label>
-    <input type="text" name="posicao" id="posicao">
+    <section id="section1">
+        <h1>Escalando o Time</h1>
+        <p>
+            <label for="posicao">Informe a posição do jogador: </label>
+            <input type="text" name="posicao" id="posicao">
+            <label for="nome">Informe o nome do jogador: </label>
+            <input type="text" name="nome" id="nome">
+            <label for="numero">Informe o número da camisa do jogador: </label>
+            <input type="number" name="numero" id="numero">
+        </p>
+        <p>
+            <label for="button">Pressione o botão para escalar o jogador</label>
+            <button type="submit" id="button" onclick="escalarJogador()">Escalar</button>
+        </p>
+    </section>
 
-    <br><br>
+    <section id="section2">
+        <h1>Jogadores Escalados</h1>
+        <ul id="jogadoresEscalados">
+        </ul>
+    </section>
 
-    <label for="nome">Informe o nome do jogador: </label>
-    <input type="text" name="nome" id="nome">
-
-    <br><br>
-
-    <label for="numero">Informe o número da camisa do jogador: </label>
-    <input type="number" name="numero" id="numero">
-
-    <br><br>
-    <label for="button">Pressione o botão para escalar o jogador</label>
-    <button type="submit" id="button" onclick="escalarJogador()">Escalar</button>
-
-    <h2>Jogadores Escalados</h2>
-    <ul id="jogadoresEscalados">
-        
-    </ul>
-    <br><br>
-    <br><br>
-
-    <label for="remover">Infome o número da camisa do jogador a ser removido</label>
-    <input type="number" name="remover" id="remover">
-    <button type="submit" id="buttonremove" onclick="removerJogador()">Remover Jogador</button>
+    <section id="section3">
+        <h1>Jogadores a serem removidos</h1>
+        <p>
+            <label for="remover">Infome o número da camisa do jogador a ser removido</label>
+            <input type="number" name="remover" id="remover">
+            <button type="submit" id="buttonremove" onclick="removerJogador()">Remover Jogador</button>
+        </p>
+    </section>
 </body>
 </html>
