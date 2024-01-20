@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Police of The Little Rock - Survey Form</h1>
+  <p id="description">Thank you for helping us to make community safer!</p>
+  <form action="" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}" required>
+      <label for="number" id="number-label" name="number">Age(optional)</label>
+      <input type="number" id="number" pattern="[0-9]" min="18" max="120" placeholder="Enter your age (optional)" value="number">
+      <label for="dropdown">Which option best describes your role in our city?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">Resident citizen</option>
+        <option value="2">Immigrant resident</option>
+        <option value="3">Temporary worker</option>
+        <option value="4">Tourist</option>
+        <option value="5">Other</option>
+      </select>
+    </fieldset>
+    <fieldset class="margin-top">
+      <legend>What is your safety feeling about our beloved city?</legend>
+      <input type="radio" name="safety" id="safety" value="veryGood" class="inline" checked>
+      <label for="safety">Very Good</label>
+      <input type="radio" name="safety" id="safety" value="good" class="inline">
+      <label for="safety">Good</label>
+      <input type="radio" name="safety" id="safety" value="regular" class="inline">
+      <label for="safety">Regular</label>
+      <input type="radio" name="safety" id="safety" value="bad" class="inline">
+      <label for="safety">Bad</label>
+      <input type="radio" name="safety" id="safety" value="unsafe" class="inline">
+      <label for="safety">Unsafe</label>
+    </fieldset>
+    <fieldset>
+        <legend>What you think we should improve in our methods of policing?</legend>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="policingLargeCenters" class="inline" checked>
+            <label for="improve">More policing in large centers</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="policingNeighborhoods" class="inline">
+            <label for="improve">More policing in neighborhoods</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="policingMajorEvents" class="inline">
+            <label for="improve">More policing at major events</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="communityPolicingPolicies" class="inline">
+            <label for="improve">Increase community policing policies</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="EducationTreatment" class="inline">
+            <label for="improve">Better education treatment with the public</label>
+        </div>
+        <div>
+            <input type="checkbox" name="improve" id="improve" value="other" class="inline">
+            <label for="improve">Other(put in the section "coments or suggestions")</label>
+        </div>
+      </fieldset>
+    <fieldset>
+      <legend>Anny Comments or suggestions?</legend>
+      <textarea name="CommentsAndSugestions" id="CommentsAndSugestions" cols="30" rows="3" placeholder="Make your suggestion here..."></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </fieldset>
+  </form>
+</body>
+</html>

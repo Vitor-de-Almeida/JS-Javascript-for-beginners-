@@ -1,0 +1,89 @@
+body{
+    background-image: url(https://images.pexels.com/photos/17244240/pexels-photo-17244240/free-photo-of-borrao-mancha-nevoa-carro.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.7);
+}
+
+h1[id="title"] {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+h1, p {
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+    color:rgba(255,255,255,0.9);
+    width: 80%;
+}
+
+#name-label {
+    display:block;
+    margin-top: 1rem;
+}
+
+form {
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+    margin:0 auto;
+    background: linear-gradient(rgba(56, 58, 60, 0.9), rgba(66, 68, 70,0.8), rgba(78, 81, 85,0.7));
+    box-shadow:0 0 20px 0 rgba(78, 81, 85,0.7);
+    border-radius: 0.2rem;
+    
+}
+
+fieldset {
+    border:0;
+    padding: 0.3rem 1.3rem;
+    margin: 1rem 1rem;
+}
+
+legend {
+    margin-bottom: 0.3rem;
+}
+
+.margin-top {
+    margin-top:0;
+}
+
+.inline {
+    width:unset;
+    display:inline;
+}
+
+select {
+    padding: 0.3em 1em;
+}
+
+select, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+}
+
+textarea {
+    border:0;
+}
+
+#submit {
+    display:block;
+    width:101%;
+    margin:0 auto;
+    padding: 0.5rem 0;
+    background-color: rgba(71, 81, 211, 0.9);  
+    border:0;
+    color: white;
+    border-radius: 0.3rem;
+}
