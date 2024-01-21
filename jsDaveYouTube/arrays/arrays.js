@@ -48,8 +48,47 @@
 
 // console.log(myArray2)
 
-const myArray = ['A', 'B', 'C', 'D', 'E', 'F']
+//const myArray = ['A', 'B', 'C', 'D', 'E', 'F']
 
-const newArray = myArray.slice(2, 5)
+// const newArray = myArray.slice(2, 5) // Cut the array into that positions
 
-console.log(newArray)
+// myArray.reverse() // Reverse the Array
+
+//const newString = myArray.join() // Creates a string with all the elements of the Array
+
+//const newArray = newString.split(",") // Creates a new Array
+
+//console.log(newArray)
+
+// const myArrayA = ['A', 'B', 'C']
+
+// const myArrayB = ['D', 'E', 'F']
+
+// // const newArray = myArrayA.concat(myArrayB)
+
+// const newArray = [...myArrayA, ...myArrayB]
+
+// console.log(newArray)
+
+const equipShelfA = ["baseball", "football", "volleyball"]
+const equipShelfB = ["basketball", "golf balls", "tennis balls"]
+
+const clothesShelfA = ["tank tops", "t-shrits", "jerseys"]
+const clothesShelfB = ["sweat tops", "sweat pants", "hoodies"]
+
+const equipDept = [equipShelfA, equipShelfB]
+const clothesDept = [clothesShelfA, clothesShelfB]
+
+console.log(equipDept[0][1])
+
+// console.log(equipDept)
+// console.log(clothesDept)
+
+const sportsStore = [equipDept, clothesDept]
+
+console.log(sportsStore)
+
+console.log(sportsStore[1][0][2])
+
+console.log(sportsStore[1][1][0])
+
