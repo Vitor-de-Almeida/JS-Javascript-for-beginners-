@@ -71,6 +71,8 @@
 
 // console.log(myName.profession[0].homeoffice)
 
+//---------------------------------
+
 const band = {
     vocals: "Robert Plant",
     guitar: "Jimmy Page",
@@ -78,20 +80,38 @@ const band = {
     drums: "John Bonham"
 }
 
-delete band.drums;
-console.log(band.hasOwnProperty("drums"))
+// delete band.drums;
 
-console.log(band)
+// console.log(band.hasOwnProperty("drums"))
 
-console.log(Object.keys(band))
-console.log(Object.values(band))
+// console.log(band)
 
-const singers = []
+// console.log(Object.keys(band))
+// console.log(Object.values(band))
 
-for (let key in band) {
-    console.log(`On ${key}, it's ${band[key]}`)
-    singers.push(band[key])
+// const singers = []
+
+// for (let key in band) {
+//     console.log(`On ${key}, it's ${band[key]}`)
+//     singers.push(band[key])
+// }
+
+// destructuring objects
+
+// const {guitar: myVariale, bass: myBass} = band
+
+// console.log(myVariale)
+// console.log(myBass)
+
+//---------------------------------
+
+const {vocals, guitar, bass, drums} = band
+
+console.log(guitar)
+console.log(vocals)
+
+function sings ({vocals}){
+    return `${vocals}  sings!`
 }
 
-
-
+console.log(sings(band))
