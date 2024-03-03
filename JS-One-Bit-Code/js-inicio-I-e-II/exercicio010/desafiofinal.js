@@ -1,35 +1,5 @@
 let vagas = []
 
-function listarVagas() {
-  const vagasEmTexto = vagas.reduce(function (textoFinal, vaga, indice) {
-    textoFinal += indice + ". "
-    textoFinal += vaga.nome
-    return textoFinal
-  }, "")
-  alert(vagasEmTexto)
-}
-
-function criarVaga() {
-
-  const nome = prompt("Digite o nome da vaga que quer criar: ")
-  const descricao = prompt("Digite a descrição da vaga que quer criar: ")
-  const dataLimite = prompt("Digite a data limite para se inscrever na vaga: ")
-
-  if (!nome.trim()) {
-    alert(`Você não digitou nenhuma vaga, tente novamente!`)
-  } else {
-    const confirmacao = confirm(`Vaga criada com sucesso com o nome de: ${nome}\n` + `Descrição: ${descricao}\n` + `Data limite para inscrição: ${dataLimite}`)
-    if (confirmacao) {
-      const vaga = {nome, descricao, dataLimite}
-      vagas.push(vaga)
-      alert("Vaga criada")
-    }
-  }
-}
-
-function visualizarVaga () {
-  alert("Qual vaga você deseja visualizar?")
-}
 
 let opcao 
 
