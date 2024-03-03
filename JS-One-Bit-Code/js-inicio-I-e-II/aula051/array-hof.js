@@ -60,16 +60,16 @@ const personagens = [
 
 // console.log(nivelTotal)
 
-const racas = personagens.reduce(function (valorAcumulado, personagem) {
-    if (valorAcumulado[personagem.raca]) {
-        valorAcumulado[personagem.raca].push(personagem)
-    } else {
-        valorAcumulado[personagem.raca] = [personagem]
-    }
-    return valorAcumulado
-}, {})
+// const racas = personagens.reduce(function (valorAcumulado, personagem) {
+//     if (valorAcumulado[personagem.raca]) {
+//         valorAcumulado[personagem.raca].push(personagem)
+//     } else {
+//         valorAcumulado[personagem.raca] = [personagem]
+//     }
+//     return valorAcumulado
+// }, {})
 
-console.log(racas)
+// console.log(racas)
 
 // const racas = {}
 
@@ -99,3 +99,26 @@ console.log(racas)
 
 // console.log(personagens)
 // console.log(personagensOrdenados)
+
+
+//////////////////
+//////////////////
+//////////////////
+//////////////////
+
+//Map
+
+// const nomes = []
+
+// for (let i=0; i< personagens.length;i++) {
+//     nomes.push(personagens[i].nome)
+// }
+
+// console.log(nomes)
+
+const nomes = personagens.map(function (personagem, indice) {
+    return personagem.nome
+}) 
+
+console.log(nomes)
+

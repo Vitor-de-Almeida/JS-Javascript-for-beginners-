@@ -38,4 +38,4 @@ function fibonacci(num) {
     }
 }
 
-console.log(fibonacci(15))
+console.log(fibonacci(5))
