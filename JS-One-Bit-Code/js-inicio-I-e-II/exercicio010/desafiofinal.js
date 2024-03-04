@@ -55,6 +55,11 @@ function increverCandidato () {
   }
 }
 
+function excluirVaga() {
+  const exclusaoDeVaga = prompt("Qual número de vaga deseja excluir?")
+  const confirmacaoDeExclusao = confirm("Deseja excluir a seguinte vaga")
+}
+
 function menu() {
 
 let opcao 
