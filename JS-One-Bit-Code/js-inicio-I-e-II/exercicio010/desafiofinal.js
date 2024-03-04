@@ -56,8 +56,13 @@ function increverCandidato () {
 }
 
 function excluirVaga() {
-  const exclusaoDeVaga = prompt("Qual número de vaga deseja excluir?")
-  const confirmacaoDeExclusao = confirm("Deseja excluir a seguinte vaga")
+  const indiceVaga = prompt("Qual número de vaga deseja excluir?")
+  const confirmacaoDeExclusao = confirm("Deseja excluir a seguinte vaga" + 
+  indiceVaga + ". " + vagas[indiceVaga].nomeVaga + "\nDescrição da vaga: " + vagas[indiceVaga].descricao + "\nData limite para inscrição: " + vagas[indiceVaga].dataLimiteInscricao)
+  if (confirmacaoDeExclusao) {
+    vagas.splice(indiceVaga, 1)
+    alert("Vaga Excluída")
+  }
 }
 
 function menu() {
