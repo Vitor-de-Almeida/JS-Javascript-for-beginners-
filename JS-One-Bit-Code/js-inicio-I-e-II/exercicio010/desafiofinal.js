@@ -2,7 +2,7 @@ let vagas = []
 
 function listarVagas () {
     vagasEmTexto = vagas.reduce(function (textoFinal, vaga, indice) {
-    textoFinal += indice + ". "
+    textoFinal += (indice + 1) + ". "
     textoFinal += vaga.nomeVaga + "\n"
     textoFinal += "Quantidade de inscritos: " + vaga.candidatos.length + "\n\n"
     return textoFinal
@@ -36,12 +36,12 @@ function visualizarVaga () {
 
   const indiceVaga = prompt("Digite o índice da vaga na qual deseja visualizar as informações: ")
 
-  const candidatosEmtexto = vagas[indiceVaga].candidatos.reduce(function(textoFinal, candidato) {
+  const candidatosEmtexto = vagas[indiceVaga-1].candidatos.reduce(function(textoFinal, candidato) {
     textoFinal += candidato + "\n"
     return textoFinal
   }, "")
 
-  alert(indiceVaga + ". " + vagas[indiceVaga].nomeVaga + "\nDescrição da vaga: " + vagas[indiceVaga].descricao + "\nData limite para inscrição: " + vagas[indiceVaga].dataLimiteInscricao + "\nQuantidade de candidatos: " + vagas[indiceVaga].candidatos.length + "\n nome dos candidatos: " + candidatosEmtexto)
+  alert((indiceVaga) + ". " + vagas[indiceVaga-1].nomeVaga + "\nDescrição da vaga: " + vagas[indiceVaga-1].descricao + "\nData limite para inscrição: " + vagas[indiceVaga-1].dataLimiteInscricao + "\nQuantidade de candidatos: \n" + vagas[indiceVaga-1].candidatos.length + "nome dos candidatos: \n" + candidatosEmtexto)
 }
 
 function increverCandidato () {
@@ -51,16 +51,16 @@ function increverCandidato () {
   const confirmacao = confirm("Seu nome é " + nomeCandidato + " e o índice da vaga para qual escolheu é " + indiceVaga)
 
   if (confirmacao) {
-    vagas[indiceVaga].candidatos.push(nomeCandidato)
+    vagas[indiceVaga-1].candidatos.push(nomeCandidato)
   }
 }
 
 function excluirVaga() {
   const indiceVaga = prompt("Qual número de vaga deseja excluir?")
-  const confirmacaoDeExclusao = confirm("Deseja excluir a seguinte vaga" + 
-  indiceVaga + ". " + vagas[indiceVaga].nomeVaga + "\nDescrição da vaga: " + vagas[indiceVaga].descricao + "\nData limite para inscrição: " + vagas[indiceVaga].dataLimiteInscricao)
+  const confirmacaoDeExclusao = confirm("Deseja excluir a seguinte vaga\n" + 
+  indiceVaga + ". " + vagas[indiceVaga-1].nomeVaga + "\nDescrição da vaga: " + vagas[indiceVaga-1].descricao + "\nData limite para inscrição: " + vagas[indiceVaga-1].dataLimiteInscricao)
   if (confirmacaoDeExclusao) {
-    vagas.splice(indiceVaga, 1)
+    vagas.splice((indiceVaga-1), 1)
     alert("Vaga Excluída")
   }
 }
@@ -74,7 +74,7 @@ do  {
 opcao = String(prompt("Por favor, escolha a opção que deseja:\n" +
                           "1. Listar vagas disponívies\n" + 
                           "2. Criar uma nova vaga\n" + 
-                          "3. Visualizar uma vaga\n" + 
+                          "3. Visualizar detalhes específicos de uma vaga\n" + 
                           "4. Inscrever um cadidato em uma vaga\n" + 
                           "5. Excluir uma vaga\n" + 
                           "6. Sair"))
