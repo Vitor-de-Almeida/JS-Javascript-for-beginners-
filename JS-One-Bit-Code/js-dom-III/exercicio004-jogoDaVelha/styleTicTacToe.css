@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+    --primary-color: #4dff91;
+    --error-color: #ff0043;
+  }
+
+body {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border-radius: 15px 15px 0 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 1em;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 2px 2px 6px (0, 0, 0, 0.5);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 20vh;
+}
+
+main {
+    padding: 1em;
+}
+
+#container-player-two {
+    margin-top:1em;
+}
+
+#button {
+    margin: 0.9em auto 0 auto;
+    width: 30%;
+}
+
+#buttonPlayersName{
+    width: 40%;
+}
+
+#container-boxtablet {
+    padding:1em;
+    margin:1em;
+}
+
+table {
+    width:60%;
+    height: 40vh;
+    border-collapse: collapse;
+    border: 2px solid red;
+    margin: auto;
+}
+
+fieldset {
+    width:60%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 1.3em;
+    padding: 0.5em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px(black);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+#table-title {
+    border: 2px solid var(--border-color);
+    width:60%;
+    margin: auto;
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-radius: 15px 15px 0 0;
+}
+
+thead {
+    width: 100%;
+    border: 2px solid yellow;
+}
+
+tbody {
+    border: 2px solid gray;
+}
+
+td {
+    border: 2px solid var(--primary-color);
+    width: 33%;
+    height: 10vh;
+}

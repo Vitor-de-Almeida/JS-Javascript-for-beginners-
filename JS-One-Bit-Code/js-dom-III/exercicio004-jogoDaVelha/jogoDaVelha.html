@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styleTicTacToe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <p>The game to win or lose</p>
+    </header>
+    <main>
+        <div id="container-player-one">
+            <label for="namePlayerOne">Player 1:</label>
+            <input type="text" name="namePlayerOne" id="namePlayerOne" placeholder="Nick Name">
+        </div>
+        <div id="container-player-two">
+            <label for="namePlayerTwo">Player 2:</label>
+            <input type="text" name="namePlayerTwo" id="namePlayerTwo" placeholder="Nick Name">
+        </div>
+        <div id="button">
+            <button id="buttonPlayersName" type="submit">Enviar</button>
+        </div>
+        <div id="container-boxtablet">
+            <table>
+                <thead>
+                    <tr>
+                        <p id="table-title">
+                           Choose "X" or "O" to play!
+                        </p>      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "charKey" data-value="1"></td>
+                        <td class = "charKey" data-value="2"></td>
+                        <td class = "charKey" data-value="3"></td>
+                    </tr>
+                    <tr>
+                        <td class = "charKey" data-value="4"></td>
+                        <td class = "charKey" data-value="5"></td>
+                        <td class = "charKey" data-value="6"></td>
+                    </tr>
+                    <tr>
+                        <td class = "charKey" data-value="7"></td>
+                        <td class = "charKey" data-value="8"></td>
+                        <td class = "charKey" data-value="9"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="jogoDaVelha.js"></script>
+</body>
+</html>
