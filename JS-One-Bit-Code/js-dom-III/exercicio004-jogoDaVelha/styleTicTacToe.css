@@ -17,7 +17,7 @@ body {
     text-align: center;
     margin: auto;
     width: 80%;
-    height: 100vh;
+    height: 100%;
     border: 1px solid var(--border-color);
     background-color: var(--bg-color);
     color: var(--font-color);
@@ -33,7 +33,7 @@ header {
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    height: 20vh;
+    height: 20%;
 }
 
 main {
@@ -49,9 +49,6 @@ main {
     width: 30%;
 }
 
-#buttonPlayersName{
-    width: 40%;
-}
 
 #container-boxtablet {
     padding:1em;
@@ -87,6 +84,7 @@ p {
     font-size: 1.3em;
     padding: 0.5em;
     border-radius: 15px 15px 0 0;
+    overflow-wrap: break-word;
 }
 
 thead {
