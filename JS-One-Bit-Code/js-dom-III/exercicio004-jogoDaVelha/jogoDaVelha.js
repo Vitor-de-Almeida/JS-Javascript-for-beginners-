@@ -75,3 +75,13 @@ function playGame() {
         });
     });
 }
+
+const buttonRebuildGame = window.document.getElementById('buttonRebuildGame')
+buttonRebuildGame.addEventListener('click', rebuildGame)
+
+function rebuildGame () {
+
+    XO.forEach(function (cell) {
+        cell.innerText = ''
+    })
+}
